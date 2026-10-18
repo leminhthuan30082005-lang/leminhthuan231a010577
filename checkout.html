@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thanh toán | Minh Thuận Shoe Review</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800;900&family=Be+Vietnam+Pro:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/sneaker.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Hotline: 0812 979 320</span>
+    <span>Email: leminhthuan30082005@gmail.com</span>
+    <span>Review giày Adidas thật</span>
+    <span>Miễn phí giao hàng cho đơn từ 2 triệu</span>
+  </div>
+</div>
+
+<header>
+  <div class="head">
+    <a class="logo" href="index.html">
+      <img data-img="brand-logo" alt="Minh Thuận Shoe Review" width="42" height="42">
+      <span>Minh Thuận<small>Shoe Review</small></span>
+    </a>
+    <div class="actions">
+      <a class="btn" href="cart.html">Giỏ hàng <span id="cartN">0</span></a>
+      <span id="authBox">
+        <a class="btn" href="register.html">Đăng ký</a>
+        <a class="btn fill" href="login.html">Đăng nhập</a>
+      </span>
+    </div>
+  </div>
+  <nav aria-label="Menu chính">
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="about.html">Thương hiệu</a></li>
+      <li><a href="products.html">Sản phẩm</a></li>
+      <li><a href="review.html">Review</a></li>
+      <li><a href="tips.html">Bí quyết chọn giày</a></li>
+      <li><a href="news.html">Tin tức</a></li>
+      <li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="pagehead">
+  <div class="wrap">
+    <h1>Thanh toán</h1>
+    <p>Điền thông tin giao hàng và chọn phương thức thanh toán.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="auth" style="grid-template-columns: 1.5fr 1fr; align-items:flex-start;">
+      <div>
+        <h2>Thông tin khách hàng</h2>
+        <form id="orderForm" class="authform" style="max-width:100%">
+
+          <label for="fullname">Họ và tên</label>
+          <input id="fullname" name="fullname" placeholder="Nhập họ và tên" required autocomplete="name">
+
+          <label for="phone">Số điện thoại</label>
+          <input id="phone" name="phone" type="tel" placeholder="Nhập số điện thoại" required autocomplete="tel">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Nhập địa chỉ email" autocomplete="email">
+
+          <label for="address">Địa chỉ</label>
+          <input id="address" name="address" placeholder="Nhập địa chỉ giao hàng" required autocomplete="street-address">
+
+          <label for="note">Ghi chú</label>
+          <textarea id="note" name="note" rows="4" placeholder="Ghi chú thêm về đơn hàng (nếu có)"></textarea>
+
+          <h3 style="margin-top:20px;font-size:18px">Phương thức thanh toán</h3>
+
+          <label style="display:flex;align-items:center;gap:10px;margin:10px 0;cursor:pointer;font-weight:400">
+            <input type="radio" name="payment" value="cod" checked> Thanh toán khi nhận hàng (COD)
+          </label>
+          <label style="display:flex;align-items:center;gap:10px;margin:10px 0;cursor:pointer;font-weight:400">
+            <input type="radio" name="payment" value="bank"> Chuyển khoản ngân hàng
+          </label>
+          <label style="display:flex;align-items:center;gap:10px;margin:10px 0;cursor:pointer;font-weight:400">
+            <input type="radio" name="payment" value="ewallet"> Ví điện tử (MoMo / ZaloPay)
+          </label>
+
+          <button class="btn fill" type="submit" style="justify-self:start;margin-top:16px">Đặt hàng</button>
+
+        </form>
+      </div>
+
+      <div>
+        <h2>Đơn hàng của bạn</h2>
+        <div id="checkout-items"></div>
+        <p class="total" id="checkout-total">0đ</p>
+        <p class="lead">Phí vận chuyển: <strong>Miễn phí</strong></p>
+        <p class="lead" style="margin-top:8px;font-size:13px">
+          Bằng việc đặt hàng, bạn đồng ý với chính sách đổi trả trong 7 ngày của Minh Thuận Shoe Review.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3>Minh Thuận Shoe Review</h3>
+        <p>Website do KOL Minh Thuận quản lý và vận hành. Giấy chứng nhận đăng ký kinh doanh số 0309802418, cấp ngày 13/07/2026 tại Sở Kế hoạch và Đầu tư TP. Hồ Chí Minh.</p>
+        <p style="margin-top:8px">Adidas và các tên sản phẩm là nhãn hiệu của chủ sở hữu. Trang này là trang review cá nhân, không phải trang chính thức của Adidas.</p>
+      </div>
+      <div>
+        <h3>Địa chỉ hoạt động</h3>
+        <p>624 Âu Cơ, Phường Bảy Hiền, TP. Hồ Chí Minh</p>
+      </div>
+      <div>
+        <h3>Phương thức thanh toán</h3>
+        <div class="pay">
+          <img data-img="pay-visa" alt="Visa" width="300" height="200">
+          <img data-img="pay-mastercard" alt="MasterCard" width="300" height="200">
+          <img data-img="pay-napas" alt="Napas" width="300" height="200">
+          <img data-img="pay-momo" alt="MoMo" width="300" height="200">
+        </div>
+      </div>
+    </div>
+    <p class="copy">© 2026 Minh Thuận Shoe Review. Bảo lưu mọi quyền.</p>
+  </div>
+</footer>
+
+<script src="js/sneaker.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* ---------- Hiển thị đơn hàng từ giỏ ---------- */
+  var box = document.getElementById("checkout-items");
+  var totalEl = document.getElementById("checkout-total");
+
+  var cart = {};
+  try { cart = JSON.parse(localStorage.getItem("cart") || "{}"); } catch (e) {}
+
+  var ids = Object.keys(cart).filter(function (k) { return parseInt(cart[k], 10) > 0; });
+
+  if (!ids.length) {
+    if (box) box.innerHTML = '<p class="lead">Chưa có sản phẩm nào trong giỏ. <a href="products.html" style="text-decoration:underline">Xem sản phẩm</a>.</p>';
+    if (totalEl) totalEl.textContent = "0đ";
+  } else {
+    var t = 0;
+    ids.forEach(function (k) {
+      var p = (window.PRODUCTS || []).filter(function (x) { return String(x.id) === String(k); })[0];
+      if (!p) return;
+      var qty = parseInt(cart[k], 10) || 0;
+      var s = p.price * qty;
+      t += s;
+      var row = document.createElement("p");
+      row.className = "lead";
+      row.innerHTML = "<strong>" + p.name + "</strong> × " + qty + " — " + s.toLocaleString("vi-VN") + "đ";
+      if (box) box.appendChild(row);
+    });
+    if (totalEl) totalEl.textContent = t.toLocaleString("vi-VN") + "đ";
+  }
+
+  /* ---------- Xử lý đặt hàng ---------- */
+  var form = document.getElementById("orderForm");
+  if (form) form.onsubmit = function (e) {
+    e.preventDefault();
+
+    if (!ids.length) {
+      alert("Giỏ hàng đang trống. Hãy thêm sản phẩm trước khi đặt hàng.");
+      return;
+    }
+
+    var name = document.getElementById("fullname").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var address = document.getElementById("address").value.trim();
+
+    if (name.length < 2) { alert("Hãy nhập họ tên."); return; }
+    if (phone.replace(/\D/g, "").length < 8) { alert("Số điện thoại chưa hợp lệ."); return; }
+    if (address.length < 5) { alert("Địa chỉ chưa hợp lệ."); return; }
+
+    /* Lưu thông tin đơn hàng (mô phỏng) */
+    try {
+      localStorage.setItem("lastOrder", JSON.stringify({
+        name: name,
+        phone: phone,
+        address: address,
+        payment: (document.querySelector('input[name="payment"]:checked') || {}).value || "cod",
+        total: t || 0,
+        date: new Date().toISOString()
+      }));
+      localStorage.removeItem("cart");
+      localStorage.removeItem("cartCount");
+    } catch (err) {}
+
+    /* Chuyển sang trang thành công */
+    location.href = "success.html";
+  };
+
+});
+</script>
+</body>
+</html>

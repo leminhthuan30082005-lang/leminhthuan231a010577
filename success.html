@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Đặt hàng thành công | Minh Thuận Shoe Review</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800;900&family=Be+Vietnam+Pro:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/sneaker.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Hotline: 0812 979 320</span>
+    <span>Email: leminhthuan30082005@gmail.com</span>
+    <span>Review giày Adidas thật</span>
+    <span>Miễn phí giao hàng cho đơn từ 2 triệu</span>
+  </div>
+</div>
+
+<header>
+  <div class="head">
+    <a class="logo" href="index.html">
+      <img data-img="brand-logo" alt="Minh Thuận Shoe Review" width="42" height="42">
+      <span>Minh Thuận<small>Shoe Review</small></span>
+    </a>
+    <div class="actions">
+      <a class="btn" href="cart.html">Giỏ hàng <span id="cartN">0</span></a>
+      <span id="authBox">
+        <a class="btn" href="register.html">Đăng ký</a>
+        <a class="btn fill" href="login.html">Đăng nhập</a>
+      </span>
+    </div>
+  </div>
+  <nav aria-label="Menu chính">
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="about.html">Thương hiệu</a></li>
+      <li><a href="products.html">Sản phẩm</a></li>
+      <li><a href="review.html">Review</a></li>
+      <li><a href="tips.html">Bí quyết chọn giày</a></li>
+      <li><a href="news.html">Tin tức</a></li>
+      <li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="pagehead">
+  <div class="wrap">
+    <h1>Đặt hàng thành công</h1>
+    <p>Cảm ơn bạn đã mua sắm tại Minh Thuận Shoe Review.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap" style="text-align:center">
+    <h2 style="color:var(--volt)">🎉 Đơn hàng đã được ghi nhận</h2>
+    <p class="lead" style="margin:14px auto 0">
+      Chúng tôi sẽ liên hệ xác nhận và giao hàng trong thời gian sớm nhất.
+    </p>
+    <p style="margin-top:16px;font-weight:700">
+      Mã đơn hàng: <strong>#MTSR2026001</strong>
+    </p>
+    <div class="row" style="justify-content:center;margin-top:24px">
+      <a class="btn fill" href="index.html">Về trang chủ</a>
+      <a class="btn" href="products.html">Tiếp tục mua sắm</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3>Minh Thuận Shoe Review</h3>
+        <p>Website do KOL Minh Thuận quản lý và vận hành. Giấy chứng nhận đăng ký kinh doanh số 0309802418, cấp ngày 13/07/2026 tại Sở Kế hoạch và Đầu tư TP. Hồ Chí Minh.</p>
+        <p style="margin-top:8px">Adidas và các tên sản phẩm là nhãn hiệu của chủ sở hữu. Trang này là trang review cá nhân, không phải trang chính thức của Adidas.</p>
+      </div>
+      <div>
+        <h3>Địa chỉ hoạt động</h3>
+        <p>624 Âu Cơ, Phường Bảy Hiền, TP. Hồ Chí Minh</p>
+      </div>
+      <div>
+        <h3>Phương thức thanh toán</h3>
+        <div class="pay">
+          <img data-img="pay-visa" alt="Visa" width="300" height="200">
+          <img data-img="pay-mastercard" alt="MasterCard" width="300" height="200">
+          <img data-img="pay-napas" alt="Napas" width="300" height="200">
+          <img data-img="pay-momo" alt="MoMo" width="300" height="200">
+        </div>
+      </div>
+    </div>
+    <p class="copy">© 2026 Minh Thuận Shoe Review. Bảo lưu mọi quyền.</p>
+  </div>
+</footer>
+
+<script src="js/sneaker.js"></script>
+<script>
+  try {
+    localStorage.removeItem("cart");
+    localStorage.removeItem("cartCount");
+  } catch (e) {}
+  document.addEventListener("DOMContentLoaded", function () {
+    var e = document.getElementById("cartN");
+    if (e) e.textContent = "0";
+  });
+</script>
+</body>
+</html>
